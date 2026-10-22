@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080808" />
+  <meta name="description" content="بوابة دخول الاختبار الرسمية لعائلة DEMONS في FiveM Roleplay." />
+  <title>DEMONS — دخول الاختبار</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="DEMONS">
+      <span class="brand-mark">D</span>
+      <span class="brand-copy"><b>DEMONS</b><small>FAMILY • ROLEPLAY</small></span>
+    </a>
+    <div class="top-status"><span class="status-dot"></span> بوابة الاختبار</div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> FIVE M ROLEPLAY <i>/</i> OFFICIAL ACCESS</div>
+        <div class="hero-title-kicker">THE FAMILY IS WATCHING</div>
+        <h1>دخول الاختبار<br><em>الآن</em></h1>
+        <p class="hero-copy">مش كل شخص مكانه وسط العائلة.<br>جاوب بوضوح، وخلّي أفعالك تتكلم عنك.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="startBtn" type="button">دخول الاختبار الآن <span>↙</span></button>
+          <div class="hero-note"><span class="mini-line"></span><span>بياناتك هتتبعت للإدارة للمراجعة</span></div>
+        </div>
+      </div>
+      <div class="hero-index"><span>01</span><i></i><span>03</span></div>
+      <div class="hero-bottom"><span>DEMONS FAMILY</span><span>RESPECT IS EARNED.</span></div>
+    </section>
+
+    <section class="application-section" id="application">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span></span> RECRUITMENT FILE</div>
+          <h2>ملف <em>الاختبار</em></h2>
+          <p>املأ البيانات المطلوبة بدقة قبل إرسال طلبك.</p>
+        </div>
+        <div class="file-stamp"><span>DM</span><small>CONFIDENTIAL<br>APPLICATION</small></div>
+      </div>
+
+      <div class="form-shell">
+        <aside class="form-aside">
+          <div class="aside-number">D<span>/</span>01</div>
+          <div class="aside-line"></div>
+          <h3>YOUR<br><em>STORY.</em></h3>
+          <p>كل إجابة بتساعد الإدارة تتعرف عليك بشكل أفضل.</p>
+          <div class="aside-footer"><span class="status-dot"></span> DEMONS • INTAKE OPEN</div>
+        </aside>
+
+        <div class="form-main">
+          <div class="progress-head">
+            <div><span class="progress-label" id="stepLabel">المرحلة 01 من 03</span><strong id="stepTitle">البيانات الشخصية</strong></div>
+            <span class="progress-percent" id="progressPercent">33%</span>
+          </div>
+          <div class="progress-track"><span id="progressBar"></span></div>
+
+          <form id="applicationForm" novalidate>
+            <div class="form-step active" data-step="0">
+              <div class="step-intro"><span class="step-icon">01</span><div><h3>خلّينا نتعرف عليك</h3><p>ابدأ بمعلوماتك الأساسية.</p></div></div>
+              <div class="fields-grid">
+                <label class="field"><span>اسمك <b>*</b></span><input name="name" required maxlength="80" placeholder="اكتب اسمك هنا" autocomplete="name"><small>اكتب الاسم اللي تحب الإدارة تناديك بيه.</small></label>
+                <label class="field"><span>عمرك <b>*</b></span><input name="age" required type="number" min="13" max="99" placeholder="العمر بالأرقام"></label>
+                <label class="field full"><span>اسمك داخل المدينة <b>*</b></span><input name="cityName" required maxlength="80" placeholder="اسم الشخصية داخل FiveM"></label>
+                <label class="field full"><span>اليوزر الخاص بك في Discord <b>*</b></span><input name="discord" required maxlength="80" placeholder="مثال: username أو username#0000"><small>تأكد إن اليوزر صحيح عشان الإدارة تقدر ترد عليك.</small></label>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="1">
+              <div class="step-intro"><span class="step-icon">02</span><div><h3>خبرتك داخل المدينة</h3><p>شاركنا تجربتك في عالم الرول بلاي.</p></div></div>
+              <div class="fields-grid">
+                <label class="field full"><span>لعبت في سيرفرات فايف ام أخرى؟ <b>*</b></span><textarea name="otherServers" required maxlength="700" rows="3" placeholder="اذكر السيرفرات وخبرتك فيها، أو اكتب لا."></textarea></label>
+                <label class="field full"><span>يعني إيه COMPAT LOG؟ <b>*</b></span><textarea name="combatLog" required maxlength="700" rows="3" placeholder="اشرح المعنى بأسلوبك."></textarea></label>
+                <label class="field full"><span>يعني إيه POWER GAMING؟ <b>*</b></span><textarea name="powerGaming" required maxlength="700" rows="3" placeholder="اشرح المعنى بأسلوبك."></textarea></label>
+                <label class="field"><span>مدة تفاعلك داخل كيان؟ <b>*</b></span><input name="cityActivity" required maxlength="100" placeholder="مثال: 4 ساعات يوميًا"></label>
+                <label class="field"><span>مدة تفاعلك داخل ديسكورد؟ <b>*</b></span><input name="discordActivity" required maxlength="100" placeholder="مثال: متواجد أغلب اليوم"></label>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="2">
+              <div class="step-intro"><span class="step-icon">03</span><div><h3>العلاقات والخبرة</h3><p>آخر كام سؤال قبل ما تبعت طلبك.</p></div></div>
+              <div class="fields-grid">
+                <label class="field full"><span>كنت في عصابات أخرى؟ <b>*</b></span><textarea name="gangExperience" required maxlength="700" rows="3" placeholder="اذكر أسماء العصابات وخبرتك، أو اكتب لا."></textarea></label>
+                <label class="field full"><span>هل تعرف أحد داخل العائلة؟ مع ذكر من <b>*</b></span><textarea name="familyContacts" required maxlength="500" rows="3" placeholder="اكتب أسماء الأشخاص، أو اكتب لا."></textarea></label>
+              </div>
+              <div class="review-note"><span class="review-mark">!</span><p><b>قبل الإرسال:</b> راجع إجاباتك. سيتم إرسال الطلب إلى إدارة DEMONS للمراجعة، والإرسال لا يعني القبول التلقائي.</p></div>
+            </div>
+
+            <div class="form-error" id="formError" role="alert" hidden></div>
+            <div class="form-success" id="formSuccess" role="status" hidden>
+              <span class="success-mark">✓</span><h3>تم إرسال طلبك</h3><p>طلبك وصل للإدارة بنجاح. تابع Discord لحد ما يتم الرد عليك.</p>
+            </div>
+            <div class="form-controls" id="formControls">
+              <button class="btn btn-quiet" id="prevBtn" type="button" disabled>السابق</button>
+              <button class="btn btn-primary" id="nextBtn" type="button">التالي <span>←</span></button>
+              <button class="btn btn-primary" id="submitBtn" type="submit" hidden>إرسال الطلب <span>↗</span></button>
+            </div>
+            <p class="privacy-note"><span>◈</span> بياناتك مخصصة لمراجعة التقديم من إدارة DEMONS فقط.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>© DEMONS FAMILY</span><span>FIVE M ROLEPLAY <i>•</i> RECRUITMENT PORTAL</span></footer>
+  <script src="/script.js" defer></script>
+</body>
+</html>
